@@ -3,6 +3,7 @@ package com.islamzada.ogrencibilgisistemi.Gorev_4
 import com.islamzada.ogrencibilgisistemi.Gorev_1.Ogrenci
 import com.islamzada.ogrencibilgisistemi.Gorev_2.DersSinifi
 import com.islamzada.ogrencibilgisistemi.Gorev_3.OgrenciBilgiSistemi
+
 fun main() {
 
     val ogrenci1 = Ogrenci("Vusal", "Islamzada", 13)
@@ -21,4 +22,5 @@ fun main() {
 
     bilgisistemi.ogrenciBilgileriniGoster()
     bilgisistemi.dersBilgileriniGoster()
+
 }
