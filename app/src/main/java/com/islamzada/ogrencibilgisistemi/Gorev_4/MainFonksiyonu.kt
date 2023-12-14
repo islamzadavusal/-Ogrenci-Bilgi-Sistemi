@@ -2,15 +2,23 @@ package com.islamzada.ogrencibilgisistemi.Gorev_4
 
 import com.islamzada.ogrencibilgisistemi.Gorev_1.Ogrenci
 import com.islamzada.ogrencibilgisistemi.Gorev_2.DersSinifi
+import com.islamzada.ogrencibilgisistemi.Gorev_3.OgrenciBilgiSistemi
+fun main() {
 
-fun main(){
+    val ogrenci1 = Ogrenci("Vusal", "Islamzada", 13)
+    val ogrenci2 = Ogrenci("Murad", "Haciyev", 25)
 
-    val ogrenci_1 = Ogrenci("Murad", "Haciyev", 18)
-    val ogrenci_2 = Ogrenci("Tural", "Seferov", 21)
+    val ders1 = DersSinifi("Matematik", 10)
+    val ders2 = DersSinifi("Fizik", 8)
 
-    val ders_1 = DersSinifi("Tarih",4)
-    val ders_2 = DersSinifi("Ana dili", 8)
+    val bilgisistemi = OgrenciBilgiSistemi()
 
-//    val ogrenciBilgiSistemi =
+    bilgisistemi.ogrenciEkle(ogrenci1)
+    bilgisistemi.ogrenciEkle(ogrenci2)
 
+    bilgisistemi.dersEkle(ders1)
+    bilgisistemi.dersEkle(ders2)
+
+    bilgisistemi.ogrenciBilgileriniGoster()
+    bilgisistemi.dersBilgileriniGoster()
 }
